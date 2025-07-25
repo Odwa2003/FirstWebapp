@@ -1,0 +1,148 @@
+<html>
+  <style>
+
+    #name-label{
+      
+      font-weight:bold;
+      font-family:sans-serif;
+    }
+      #email-label{
+      
+      font-weight:bold;
+      font-family:sans-serif;
+    }
+      #number-label{
+      
+      font-weight:bold;
+      font-family:sans-serif;
+    }
+    #title{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+    }
+    #survey-form{
+      display:flex;
+      width:auto;
+      border:10px solid #e3b778;
+      border-radius:10px;
+      background:#e3b778;
+      margin-left:1fr;
+      margin-right:1fr;
+    }
+    #description{
+      
+    }
+    #name{
+      font-family:sans-serif;
+      margin-left:10px;
+      border:1px solid black;
+      border-radius:2em;
+    }
+    #number{
+      font-family:sans-serif;
+      margin-left:10px;
+      border:1px solid black;
+      border-radius:2em;
+    }
+    #submit{
+      
+    }
+    #text-area{
+      
+      width:60%;
+      
+}
+    #email{
+      font-family:sans-serif;
+      margin-left:10px;
+      border:1px solid black;
+      border-radius:2em;
+      
+    }
+    #dropdown{
+      border:1px solid black;
+      border-radius:2em;
+    }
+    #discription{
+      
+    }
+    #main{
+      background:#FFFDD0;
+    }
+  </style>
+  <main id=main>
+    
+    <div id=title>
+      <h1>
+        <center>
+        Albion Survay
+        </center>
+      </h1>
+      
+        <center>
+          <p id=description>Thank you for taking this survay that will improve the experecne of the game.</p>
+        </center>
+      
+    </div>
+    <form id=survey-form>
+      <div>
+        <div><label id=name-label>Name</label></div>
+        <input id=name type=text placeholder="Full Name" required>
+        <div><label id=email-label>
+          Email
+        </label></div>
+        <input id=email type=email placeholder="Email Address" required>
+        <p><label id=number-label>Age</label></p>
+        <input  type=number id=number placeholder="Age" min="7" max="100" required >
+         <p><label id=number-label>Average hours of Albion played per day.</label></p>
+        <input id="number" type="number" min="0" max="24">
+        <p><label id= email-label>Main Class</label></p>
+        <select id = dropdown>
+          <option>Tank</option>
+          <option>Healer</option>
+          <option>DPS</option>
+          <option>Support</option>
+        </select>
+        <p id= email-label>Royal City you are in the most.</p> 
+        <lable for=Caerleon>
+          <input id="Caerleon" type="radio" name="City" value=Caerleon>Caerleon
+        </lable>
+        <lable for=Thetford>
+          <input type="radio" name="City" id="Thetford" value=Thetford>Thetford
+        </lable>
+        <lable for=FortSterling>
+          <input type="radio" name="City" id="FortSterling" value=FortSterling>Fort Sterling
+        </lable>
+        <lable for=Lymhurst>
+          <input type="radio" name="City" id="Lymhurst" value=Lymhurst>Lymhurst
+        </lable>
+        <lable for=Bridgewatch>
+          <input type="radio" name="City" id="Bridgewatch" value=Bridgewatch>Bridgewatch
+        </lable>
+        <lable for=Martlock>
+          <input type="radio" name="City" id="Martlock" value=Martlock>Martlock
+        </lable>
+        <p id=email-label>The way you of gathering in game currency</p>
+        <lable for=gathering>
+          <input type=checkbox name=money value=gathering id=gathering>Gathering
+        </lable>
+        <lable for=crafting>
+          <input type=checkbox name=money value=crafting id=crafting>Crafting
+        </lable>
+        <lable for=battling>
+          <input type=checkbox name=money value=battling id=battling>Battling
+        </lable>
+        
+        <p id=email-label>"If you have anymore comments/suggestions about the game."</p>
+        <textarea id=text-area>
+        </textarea>
+        <br>
+        <input type=submit id=submit>
+      </div>
+      
+    </form>
+  </main>
+</html>
